@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsion article section</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/logo.png')}}" type="image/x-icon">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style/style.css')}}" />
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navigation bar  -->
+    <nav class="navigation max_width_1 margin_auto margin_div">
+        <div class="nav_left">
+            <div class="header"> <a href="#" class="company_name">un<span>i</span>son</a></div>
+            <input type="checkbox" id="openSideBarMenu">
+            <label for="openSideBarMenu" class="sideBarIconToggle">
+                <div class="spinner top_spinner"></div>
+                <div class="spinner middle_spinner"></div>
+                <div class="spinner bottom_spinner"></div>
+            </label>
+            <div id="sideBarMenu">
+
+                <ul>
+                    <li><a href="{{url_for('home')}}" class="inactive"><i class="fas fa-home fa_icon"></i>home</a></li>
+                    <li><a href="{{url_for('blog')}}" class="active underline_hover"><i
+                                class="fas fa-blog fa_icon"></i>blog</a>
+                    </li>
+                    <li><a href="{{url_for('about')}}" class="inactive underline_hover"><i
+                                class="fas fa-address-card fa_icon"></i>about</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Share button  -->
+    <div class="share-btn-container">
+        <a href="#" target="_blank" class="facebook-btn">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="#" target="_blank" class="twitter-btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="#" target="_blank" class="pinterest-btn">
+            <i class="fab fa-pinterest"></i>
+        </a>
+
+        <a href="#" target="_blank" class="linkedin-btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="#" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Article content  -->
+    <div class="article_content_page max_width_1 margin_auto">
+        <h1>Top 10 Watches Available on Amazon</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo unde
+            voluptatem numquam illo ullam corporis dignissimos tenetur! Facere ipsum
+            iste quia praesentium est ipsa sint fuga error quasi, doloremque, qui
+            distinctio, unde necessitatibus molestiae suscipit eligendi facilis
+            corrupti dolores amet tempora et. Pariatur mollitia ipsam quibusdam
+            aliquid, rerum officia ipsa nostrum aut! Sint exercitationem itaque
+            deleniti aperiam unde aliquam molestias debitis, officia amet nesciunt
+            quasi consequuntur nihil nostrum quos reiciendis culpa est accusamus
+            error qui dicta quas suscipit, iste voluptates perspiciatis. Iure enim
+            earum possimus consequatur. Animi, delectus distinctio tempora
+            similique, pariatur, quod ratione consequuntur quo iusto ipsa quae hic.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo unde
+            voluptatem numquam illo ullam corporis dignissimos tenetur! Facere ipsum
+            iste quia praesentium est ipsa sint fuga error quasi, doloremque, qui
+            distinctio, unde necessitatibus molestiae suscipit eligendi facilis
+            corrupti dolores amet tempora et. Pariatur mollitia ipsam quibusdam
+            aliquid, rerum officia ipsa nostrum aut! Sint exercitationem itaque
+            deleniti aperiam unde aliquam molestias debitis, officia amet nesciunt
+            quasi consequuntur nihil nostrum quos reiciendis culpa est accusamus
+            error qui dicta quas suscipit, iste voluptates perspiciatis. Iure enim
+            earum possimus consequatur. Animi, delectus distinctio tempora
+            similique, pariatur, quod ratione consequuntur quo iusto ipsa quae hic.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo unde
+            voluptatem numquam illo ullam corporis dignissimos tenetur! Facere ipsum
+            iste quia praesentium est ipsa sint fuga error quasi, doloremque, qui
+            distinctio, unde necessitatibus molestiae suscipit eligendi facilis
+            corrupti dolores amet tempora et. Pariatur mollitia ipsam quibusdam
+            aliquid, rerum officia ipsa nostrum aut! Sint exercitationem itaque
+            deleniti aperiam unde aliquam molestias debitis, officia amet nesciunt
+            quasi consequuntur nihil nostrum quos reiciendis culpa est accusamus
+            error qui dicta quas suscipit, iste voluptates perspiciatis. Iure enim
+            earum possimus consequatur. Animi, delectus distinctio tempora
+            similique, pariatur, quod ratione consequuntur quo iusto ipsa quae hic.
+        </p>
+        <img class="pinterest-img"
+            src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            alt="" />
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo unde
+            voluptatem numquam illo ullam corporis dignissimos tenetur! Facere ipsum
+            iste quia praesentium est ipsa sint fuga error quasi, doloremque, qui
+            distinctio, unde necessitatibus molestiae suscipit eligendi facilis
+            corrupti dolores amet tempora et. Pariatur mollitia ipsam quibusdam
+            aliquid, rerum officia ipsa nostrum aut! Sint exercitationem itaque
+            deleniti aperiam unde aliquam molestias debitis, officia amet nesciunt
+            quasi consequuntur nihil nostrum quos reiciendis culpa est accusamus
+            error qui dicta quas suscipit, iste voluptates perspiciatis. Iure enim
+            earum possimus consequatur. Animi, delectus distinctio tempora
+            similique, pariatur, quod ratione consequuntur quo iusto ipsa quae hic.
+        </p>
+        <img class="pinterest-img"
+            src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            alt="" />
+        <button class="scrollBtn btn"><i class="fas fa-arrow-up"></i></button>
+    </div>
+
+    <script src="{{url_for('static', filename='javascript/article.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+// File contains the utilities classes requied for the website.
+
+// Importing Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Poppins:wght@600&family=Roboto&family=Ubuntu:wght@500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+// Variables
+
+// Fonts 
+$font1: "Baloo Bhaina 2", cursive;
+$font2: "Roboto", sans-serif;
+$font3: "Ubuntu", sans-serif;
+$article_header_font:'Poppins', sans-serif;
+$header_font:'Poppins', sans-serif;
+// $header_font:'Source Sans Pro', sans-serif;
+
+
+// Color 
+$font_color: black;
+$header_text_color: rgba(44, 58, 71, 1);
+// $btn_main_color: #4a4a4a;
+$btn_main_color: rgba(30, 39, 46, 1);
+$selection_color: #ff7900;
+$nav_hover_color: #cdcdcd;
+
+// Social Media Variables
+$facebook_color: #4267b2;
+$twitter_color: #1da1f2;
+$youtube_color: #ff0000;
+$instagram_color: #c13584;
+
+// Mixin
+@mixin flex_box($justify_content, $align_items) {
+    display: flex;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
+
+// Downloaded  Fonts
+
+// @font-face {
+//     font-family: header_font;
+//     src: url(../fonts/Aero.ttf);
+// }
+
+// Utility Classes
+
+.max_width_1 {
+    max-width: 80vw;
+}
+
+.max_width_2 {
+    max-width: 60vw;
+}
+
+.margin_auto {
+    margin: auto;
+}
+
+.margin_div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.font_fam_1 {
+    font-family: $font1;
+}
+
+.font_fam_2 {
+    font-family: $font2;
+}
+
+.active {
+    border-bottom: 2px solid $header_text_color;
+}
+
+.inactive:hover {
+    border-bottom: 2px solid $nav_hover_color;
+}
+
+.form_input {
+    padding: 9px 22px;
+    font-size: 1rem;
+    outline: none;
+    margin: 0rem 0.7rem;
+    font-family: $font2;
+    border: 0.1rem solid rgb(199, 199, 199);
+    border-radius: 1.3rem;
+    width: 65%;
+    transition: all .3s ease-in-out;
+    &:focus {
+        border: 0.1rem solid $font_color;
+        width: 100%;
+    }
+}
+
+
+.btn {
+    padding: 8px 20px;
+    font-family: $font2;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
+    border: 0.1rem solid $font_color;
+    border-radius: 1.3rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: $btn_main_color;
+        color: white;
+    }
+}
+
+.fa_icon {
+    margin-right: 0.3rem;
+}
+
+// Social Media Utilis
+
+$facebook_color: #4267b2;
+$twitter_color: #1da1f2;
+$youtube_color: #ff0000;
+$instagram_color: #c13584;
+
+
+// Social media hover in about and index page
+
+.facebook:hover{
+    color: $facebook_color;
+}
+.instagram:hover{
+    color: $instagram_color;
+}
+.twitter:hover{
+    color: $twitter_color;
+}
+.youtube:hover{
+    color: $youtube_color;
+}
+
+// .twitter {
+//     color: #1da1f2;
+// }
+// .youtube {
+//     color: #ff0000;
+// }
+// .instagram {
+//     color: #c13584;
+// }

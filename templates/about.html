@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unison || About</title>
+
+    <!-- Necessary tags  -->
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style/style.css')}}">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="theme-color" content="#ff7900">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{url_for('static',filename='favicon.png')}}" type="image/x-icon">
+
+
+    <!-- All important meta tags for SEO  -->
+
+    <!-- HTML Meta Tags -->
+    <title>Committed to simplifying e-commerce for you!!!</title>
+    <meta name="description"
+        content="At Unison we write articles about the offers on the e-commerce platforms so that you can make most of the offers, we select the product that fits your personality.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://unisonweb.netlify.app/about.html/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Committed to simplifying e-commerce for you!!!">
+    <meta property="og:description"
+        content="At Unison we write articles about the offers on the e-commerce platforms so that you can make most of the offers, we select the product that fits your personality.">
+    <meta property="og:image"
+        content="https://scontent.fbom4-2.fna.fbcdn.net/v/t39.30808-6/241194850_114610044316230_4821732176566187251_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=InTFp_KviBEAX-do3oA&_nc_ht=scontent.fbom4-2.fna&oh=57b57043ecafef1f9e974b4fab79d7e7&oe=616DEA3C">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="unisonweb.netlify.app">
+    <meta property="twitter:url" content="https://unisonweb.netlify.app/about.html/">
+    <meta name="twitter:title" content="Committed to simplifying e-commerce for you!!!">
+    <meta name="twitter:description"
+        content="At Unison we write articles about the offers on the e-commerce platforms so that you can make most of the offers, we select the product that fits your personality.">
+    <meta name="twitter:image"
+        content="https://scontent.fbom4-2.fna.fbcdn.net/v/t39.30808-6/241194850_114610044316230_4821732176566187251_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=InTFp_KviBEAX-do3oA&_nc_ht=scontent.fbom4-2.fna&oh=57b57043ecafef1f9e974b4fab79d7e7&oe=616DEA3C">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+</head>
+
+<body>
+
+    <!-- Navigation bar  -->
+    <nav class="navigation max_width_1 margin_auto margin_div">
+        <div class="nav_left">
+            <div class="header"> <a href="{{url_for('home')}}" class="company_name">un<span>i</span>son</a></div>
+            <input type="checkbox" id="openSideBarMenu">
+            <label for="openSideBarMenu" class="sideBarIconToggle">
+                <div class="spinner top_spinner"></div>
+                <div class="spinner middle_spinner"></div>
+                <div class="spinner bottom_spinner"></div>
+            </label>
+            <div id="sideBarMenu">
+
+                <ul>
+                    <li><a href="{{url_for('home')}}" class="inactive"><i class="fas fa-home fa_icon"></i>home</a></li>
+                    <li><a href="{{url_for('blog')}}" class="inactive underline_hover"><i class="fas fa-blog fa_icon"></i>blog</a>
+                    </li>
+                    <li><a href="{{url_for('about')}}" class="active underline_hover"><i
+                                class="fas fa-address-card fa_icon"></i>about</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hr after content section -->
+    <div class="max_width_1 margin_auto margin_div">
+        <hr>
+    </div>
+
+    <div class="about">
+        <div class="about_content">
+            <h1>About Unison</h1>
+            <p>We are a Mumbai-based startup, which started with a group of friends and help you to save your time and
+                money in online <span> shopping. We are dedicated to simplifying e-commerce for you! We at Unison helps
+                    you
+                    find the best deals available in the market.</span></p>
+
+            <h2>Our Purpose</h2>
+            <ul>
+                <li>Simplify E-commerce</li>
+                <li>To change the online shopping experience</li>
+                <li>Save your Time</li>
+                <li>Creative & easily understandable Blogs</li>
+                <li>Products which you like</li>
+            </ul>
+
+            <p>We believe that time is the most important thing and we help you to save your time and effort in online
+                shopping.</p>
+
+
+            <div class="social_icons">
+                <h3>Send Feedback</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/unison2/" target="_blank"><i
+                                class="fab fa-facebook-square facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/main_unison/" target="_blank"><i
+                                class="fab fa-instagram instagram"></i></a></li>
+                    <li><a href="https://twitter.com/main_unison" target="_blank"><i
+                                class="fab fa-twitter twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC8-IPt68KgffmS6Lk6WALVA" target="_blank"><i
+                                class="fab fa-youtube youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="about_image">
+            <img src="{{url_for('static',filename='images/logo.png')}}" alt="Unison Logo">
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- hr after content section -->
+    <div class="max_width_1 margin_auto margin_div">
+        <hr>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p class="font_fam_2">Copyright &copy; <a href="https://www.instagram.com/1abhi6/" target="blank"><b>ABHISHEK
+                    UNISON</b></a> </p>
+        <b>
+            <p class="font_fam_2"><a href="mailto:1abhigup6@gmail.com" target="blank"> <i class="far fa-envelope"></i>
+                    Send a mail</a></p>
+        </b>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unison || Blog</title>
+
+    <!-- Necessary tags  -->
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style/style.css')}}">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Font Awesome cdn for search icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="theme-color" content="#ff7900">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{url_for('static',filename='favicon.png')}}" type="image/x-icon">
+
+
+    <!-- All important meta tags for SEO  -->
+
+    <!-- HTML Meta Tags -->
+    <title>Committed to simplifying e-commerce for you!!!</title>
+    <meta name="description"
+        content="At Unison we write articles about the offers on the e-commerce platforms so that you can make most of the offers, we select the product that fits your personality.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://unisonweb.netlify.app/blog.html/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Committed to simplifying e-commerce for you!!!">
+    <meta property="og:description"
+        content="At Unison we write articles about the offers on the e-commerce platforms so that you can make most of the offers, we select the product that fits your personality.">
+    <meta property="og:image"
+        content="https://scontent.fbom4-2.fna.fbcdn.net/v/t39.30808-6/241194850_114610044316230_4821732176566187251_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=InTFp_KviBEAX-do3oA&_nc_ht=scontent.fbom4-2.fna&oh=57b57043ecafef1f9e974b4fab79d7e7&oe=616DEA3C">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="unisonweb.netlify.app">
+    <meta property="twitter:url" content="https://unisonweb.netlify.app/blog.html/">
+    <meta name="twitter:title" content="Committed to simplifying e-commerce for you!!!">
+    <meta name="twitter:description"
+        content="At Unison we write articles about the offers on the e-commerce platforms so that you can make most of the offers, we select the product that fits your personality.">
+    <meta name="twitter:image"
+        content="https://scontent.fbom4-2.fna.fbcdn.net/v/t39.30808-6/241194850_114610044316230_4821732176566187251_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=InTFp_KviBEAX-do3oA&_nc_ht=scontent.fbom4-2.fna&oh=57b57043ecafef1f9e974b4fab79d7e7&oe=616DEA3C">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+</head>
+
+<body>
+
+    <!-- Navigation bar  -->
+    <nav class="navigation max_width_1 margin_auto margin_div">
+        <div class="nav_left">
+            <div class="header"> <a href="{{url_for('home')}}" class="company_name">un<span>i</span>son</a></div>
+            <input type="checkbox" id="openSideBarMenu">
+            <label for="openSideBarMenu" class="sideBarIconToggle">
+                <div class="spinner top_spinner"></div>
+                <div class="spinner middle_spinner"></div>
+                <div class="spinner bottom_spinner"></div>
+            </label>
+            <div id="sideBarMenu">
+
+                <ul>
+                    <li><a href="{{url_for('home')}}" class="inactive"><i class="fas fa-home fa_icon"></i>home</a></li>
+                    <li><a href="{{url_for('blog')}}" class="active underline_hover"><i
+                                class="fas fa-blog fa_icon"></i>blog</a>
+                    </li>
+                    <li><a href="{{url_for('about')}}" class="inactive underline_hover"><i
+                                class="fas fa-address-card fa_icon"></i>about</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_right">
+            <button class="btn search_icon"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="popup_bg">
+            <div class="popup">
+                <input type="text" class="form_input blog_search" id="searchbar" onkeyup="search_Blog()"
+                    placeholder=" &#xf002;  Search Article">
+                <!-- <button class="btn search_btn blog_search" onclick="searchBlog()">Search</button> -->
+                <span class="popup_close"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- hr after content section -->
+    <div class="max_width_1 margin_auto margin_div">
+        <hr>
+    </div>
+
+    <!-- Home Page article -->
+    <div class="home_articles max_width_1 margin_auto font_fam_2 margin_div" id="main_articles_div">
+        <h2>Latest Articles</h2>
+        <div class="blog_List">
+            <!-- Article 1  -->
+            <a href="{{url_for('sample')}}" class="home_article">
+                <div class="home_article_img">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" alt="">
+                </div>
+                <div class="home_article_content font_fam_2" id="child_article_div">
+                    <h3>‘Pandora papers’ show London is a key hub for tax avoidance</h3>
+                    <p>A 2.94 terabyte data trove exposes the offshore secrets of wealthy elites from more than 200
+                        countries and territories. These are people who use tax and secrecy havens to buy property and
+                        hide assets; many avoid taxes and worse.</p>
+                    <p>Author: Admin</p>
+                    <span>06 Oct | <b>5 min read</b></span>
+                </div>
+            </a>
+
+            <!-- Article 2  -->
+            <a href="{{url_for('sample2')}}" class="home_article">
+                <div class="home_article_img">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" alt="">
+                </div>
+                <div class="home_article_content font_fam_2" id="child_article_div">
+                    <h3>Gone in Minutes, Out for Hours: Outage Shakes Facebook.</h3>
+                    <p>When apps used by billions of people worldwide blinked out, lives were disrupted, businesses were
+                        cut off from customers — and some Facebook employees were locked out of their offices.</p>
+                    <p>Author: Admin</p>
+                    <span>03 Oct | <b>5 min read</b></span>
+                </div>
+            </a>
+
+            <!-- Article 3  -->
+            <a href="{{url_for('sample3')}}" class="home_article">
+                <div class="home_article_img">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" alt="">
+                </div>
+                <div class="home_article_content font_fam_2" id="child_article_div">
+                    <h3>Market LIVE Updates: Indices trade higher led by oil & gas, power stocks; ONGC, UPL top gainers
+                    </h3>
+                    <p>If Nifty continues its uptrend, then the level of 17,750 can act as a good support level and can
+                        go till the next resistance level which is at 17,935. But on the other hand, if Nifty slip below
+                        17,750 then can show a move till 17,620 level.</p>
+                    <p>Author: Admin</p>
+                    <span>08 Oct | <b>5 min read</b></span>
+                </div>
+            </a>
+
+            <!-- Article 4  -->
+            <a href="{{url_for('about')}}" class="home_article">
+                <div class="home_article_img">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" alt="">
+                </div>
+                <div class="home_article_content font_fam_2" id="child_article_div">
+                    <h3>Information about unison</h3>
+                    <p>We are a Mumbai based startup, which started with group of friends and helps you to save your
+                        time and money in the online shopping. We are dedicated to simplify e-commerce for you! We at
+                        Unison helps you find the best deals availble in the market.</p>
+                    <p>Author: Admin</p>
+                    <span>26 Sept | <b>5 min read</b></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- hr after content section -->
+    <div class="max_width_1 margin_auto margin_div">
+        <hr>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p class="font_fam_2">Copyright &copy; <a href="https://www.instagram.com/1abhi6/" target="blank"><b>ABHISHEK
+                    UNISON</b></a> </p>
+        <b>
+            <p class="font_fam_2"><a href="mailto:1abhigup6@gmail.com" target="blank"> <i class="far fa-envelope"></i>
+                    Send a mail</a></p>
+        </b>
+
+    </footer>
+</body>
+
+
+<!-- JavaScript for the blog page -->
+
+<script src="{{url_for('static', filename='javascript/blog.js')}}"></script>
+
+</html>
